@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <style>
+            body {
+                background: #333;
+                color: #fff;
+                margin: 0;
+            }
+
+            .wrapper {
+                background: #595555;
+                margin: 0 auto;
+                padding: 1em;
+                width: 800px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 26pt;
+            }
+
+            .code {
+                background-color: #272822;
+                border-radius: 5px;
+                color: white;
+                display: inline-block;
+                font-family: "Ubuntu Mono";
+                font-size: 12pt;
+                font-weight: 500;
+                padding: .5em;
+            }
+        </style>
+        <title>Welcome</title>
+    </head>
+    <body>
+        <section class="wrapper">
+            <h1>Welcome to my URL shortener!</h1>
+            <p>
+                Use a program such as Postman to send a POST request to:
+            </p>
+            <p class="code">
+                http://localhost:3000/shorten
+            </p>
+            <p>
+                with a JSON body like so:
+            </p>
+            <p class="code">
+                {
+                    "url": "http://www.thisisareallylongurlthatneedsashortcode.com"
+                }
+            </p>
+            <p>
+                it will then give you a shortened URL you can visit to be redirected to your long URL.
+            </p>
+            <p>
+                NOTE: You can also visit:
+            </p>
+            <p class="code">
+                http://localhost:3000/api/shortUrls
+            </p>
+            <p>
+                to get a list of currently shortened URLs.
+            </p>
+        </section>
+    </body>
+</html>
